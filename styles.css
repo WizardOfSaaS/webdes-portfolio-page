@@ -62,3 +62,62 @@ header h1 {
 		transform: translateY(0%);
 	}
 }
+
+
+/* About section */
+
+section#welcome-section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(210, 10%, 35%);
+}
+
+#welcome-section h1 {
+	text-align: center;
+	font-size: 32px;
+}
+
+#welcome-section h1 span:first-child {
+	color: hsl(210, 5%, 90%);
+	animation: fade-in 1s ease-in-out 1.5s forwards;
+	opacity: 0%;
+}
+
+#welcome-section h1 span:last-child {
+	font-family:'Courier New', Courier, monospace;
+	animation: fade-in-color 1.5s ease-in-out 3s forwards;
+	opacity: 0%;
+	font-size: 30px;
+}
+
+@keyframes fade-in{
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes fade-in-color{
+	0% {
+		opacity: 0%;
+		color: hsl(210, 5%, 90%);
+	}
+	50% {
+		opacity: 80%;
+		color: hsl(210, 5%, 90%);
+	}
+	80% {
+		opacity: 100%;
+		color: var(--header-bg-color);
+	}
+	100% {
+		opacity: 100%;
+		color: var(--header-bg-color);
+		border-bottom: 4px solid var(--header-bg-color);
+	}
+}
