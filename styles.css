@@ -192,3 +192,11 @@ section#welcome-section {
 	display: block;
 	color: hsl(210, 5%, 90%);
 }
+
+/* Media */
+
+@media (max-width: 640px) {
+	header, .contact-links {
+		flex-direction: column;
+	}
+}
