@@ -164,3 +164,31 @@ section#welcome-section {
 	color: var(--header-bg-color);
 	transition: 0.5s ease-in-out;
 }
+
+/* Contact section */
+#contact h1 {
+	color: hsl(210, 5%, 90%);
+	text-align: center;
+	font-size: 32px;
+	margin: 3em auto;
+}
+
+#contact .contact-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 30px; 
+	margin: 0 auto 30px auto;
+}
+
+#contact .contact-links a {
+	display: block;
+	font-size: 28px;
+	text-decoration: none;
+	color: var(--header-bg-color);
+}
+
+#contact .contact-links a:hover {
+	display: block;
+	color: hsl(210, 5%, 90%);
+}
