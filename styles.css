@@ -121,3 +121,46 @@ section#welcome-section {
 		border-bottom: 4px solid var(--header-bg-color);
 	}
 }
+
+/* Projects section */
+
+#projects h1 {
+	color: hsl(210, 5%, 90%);
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+.project-tiles {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin: 0 auto;
+}
+
+.project-snap iframe {
+	overflow: hidden;
+}
+
+.project-tile {
+	background-color: gray;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.project-name a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	transition: 1s ease-in-out;
+}
+
+.project-name a:hover {
+	color: var(--header-bg-color);
+	transition: 0.5s ease-in-out;
+}
